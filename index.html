@@ -9,14 +9,29 @@
 	<body>
 		<main class="container">
 			<div class="carousel">
-				<img
-					src="./assets/images/felix-rottmann-Oha6J_IsKjM-unsplash.jpg"
-					alt="nature"
-				/>
+			
+				<ol class="nav-lines">
+					<li class="line active" onclick="currentSlide(1)"></li>
+					<li class="line" onclick="currentSlide(2)"></li>
+					<li class="line" onclick="currentSlide(3)"></li>
+				</ol>
+				<div class="mySlides">
+					<img src="./assets/images/benjamin-davies-JrZ1yE1PjQ0-unsplash.jpg" />
+				</div>
+
+				<div class="mySlides">
+					<img src="./assets/images/chung-yee-tsang-wqxCKM0R6R8-unsplash.jpg" />
+				</div>
+
+				<div class="mySlides">
+					<img src="./assets/images/mohammad-alizade-62t_kKa2YlA-unsplash.jpg" />
+				</div>
 			</div>
+			<br />
+
 			<div class="cards-container">
 				<div class="card">
-					<img src="./assets/images/felix-rottmann-Oha6J_IsKjM-unsplash.jpg" />
+					<img src="./assets/images/benjamin-davies-JrZ1yE1PjQ0-unsplash.jpg" />
 					<div class="card-content">
 						<h2>Card Title</h2>
 						<p>
@@ -27,7 +42,7 @@
 					</div>
 				</div>
 				<div class="card">
-					<img src="./assets/images/julien-riedel-Dd7tJzbyF2Y-unsplash.jpg" />
+					<img src="./assets/images/chung-yee-tsang-wqxCKM0R6R8-unsplash.jpg" />
 					<div class="card-content">
 						<h2>Card Title</h2>
 						<p>
@@ -38,7 +53,7 @@
 					</div>
 				</div>
 				<div class="card">
-					<img src="./assets/images/marek-piwnicki-sOJKAxFDQi4-unsplash.jpg" />
+					<img src="./assets/images/mohammad-alizade-62t_kKa2YlA-unsplash.jpg" />
 					<div class="card-content">
 						<h2>Card Title</h2>
 						<p>
@@ -51,4 +66,5 @@
 			</div>
 		</main>
 	</body>
+	<script src="./index.js"></script>
 </html>

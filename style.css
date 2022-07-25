@@ -1,71 +1,115 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 body {
- margin: 3rem;
+	margin: 3rem;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
 }
 
 .carousel {
-  width: 100%;
-  
-  margin-bottom: 2rem;
+	width: 100%;
+	margin-bottom: 2rem;
 }
 
 .carousel img {
-  width: 100%;
-  height: 500px;
+	width: 100%;
+	height: 400px;
+}
+.nav-lines {
+    right: 0;
+    top: 300px;
+    bottom: 0px;
+    position: relative;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: 1rem;
+    margin-left: 15%;
+    list-style: none;
+}
+
+.nav-lines li {
+	box-sizing: content-box;
+	flex: 0 1 auto;
+	width: 50px;
+	height: 5px;
+	padding: 0;
+	margin-right: 3px;
+	margin-left: 3px;
+	cursor: pointer;
+	background-clip: padding-box;
+}
+
+.line {
+  background-color: gray;
+}
+
+.active {
+  background-color: #fff;
+}
+
+.nav-lines li:hover {
+  color: #fff;
+  background-color: #fff;
 }
 
 
-.cards-container {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 2rem;
 
+.nav-lines span {
+	width: 100px;
+	height: 100px;
+}
+
+.cards-container {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 2rem;
 }
 
 .card {
-  width: 300px;
-  margin: 0 2rem;
-  border: 1px solid gray;
+	max-width: 300px;
+	min-width: 250px;
+	margin: 0 2rem;
+	border: 1px solid gray;
 }
 
 .card img {
-  width: 100%;
-  height: 200px;
+	width: 100%;
+	height: 200px;
 }
 
 .card-content {
- padding: 1rem;
+	padding: 1rem;
 }
 
 .card-content h2 {
-  margin-bottom: 1rem;
+	margin-bottom: 1rem;
 }
 
 .card-content p {
-  margin-bottom: 1rem;
+	margin-bottom: 1rem;
 }
 
 .card-content button {
-  border: none;
-  padding: .5rem 1rem;
-  border-radius: 6px;
-  background-color: rgb(37, 108, 251);
-  color: #fff;
-  cursor: pointer
-  ;
+	border: none;
+	padding: 0.5rem 1rem;
+	border-radius: 6px;
+	background-color: rgb(37, 108, 251);
+	color: #fff;
+	cursor: pointer;
 }
